@@ -1,0 +1,39 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-sans;
+	font-weight: 700;
+    color: $color--secondary;
+}
+
+h1 {
+	font-size: 1.8rem;
+	margin-top: $margin--general;
+	margin-bottom: $margin--general;
+}
+
+h2 {
+	font-size: 1.3rem;
+	margin-top: $margin--small;
+	margin-bottom: $margin--small;
+	&.atm--home {
+		font-size: 1.7rem;
+	}
+}
+
+h3 {
+	font-size: 1.2rem;
+	margin-top: $margin--small;
+	margin-bottom: $margin--small;
+	&.atm--home {
+		font-size: 1.3rem;
+	}
+}
+
+p {
+	&.atm--home {
+		font-size: 1.1rem;
+	}
+}
+
+.ut--uc {
+	@include headingUC;
+}

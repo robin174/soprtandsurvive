@@ -1,0 +1,441 @@
+@charset "UTF-8";
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Variable Font Sizes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Body font size. By default 16px, based on 16px as 'root em' */
+/* Major second scale progression - see https://type-scale.com/ */
+/* Line height is set to the "Golden ratio" for optimal legibility */
+/* Initial sizing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*  NOTE. html is set to 62.5% so that all the REM measurements throughout Skeleton are based on 10px sizing. So basically 1.5rem = 15px */
+/*  NOTE. If normal, 100% equals 16px sizing. */
+html {
+  font-size: 100%;
+}
+
+body {
+  background: #A6DDF5;
+  color: #4E3319;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em; /* currently ems because Chrome bug misinterpreting rems on body element */
+}
+
+/* Initial sizing - set in 'helpers' - '_variables.scss' */
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Larger than mobile */
+/* Larger than small tablet */
+/* Larger than tablet */
+/* Larger than desktop */
+a {
+  transition: 0.3s;
+  color: #167257;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #4E3319;
+}
+
+@media (min-width: 1400px) {
+  .container-fluid {
+    padding: 0 180px;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #4E3319;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+h2.atm--home {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+h3.atm--home {
+  font-size: 1.3rem;
+}
+
+p.atm--home {
+  font-size: 1.1rem;
+}
+
+.ut--uc {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-family: "Montserrat", sans-serif;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+}
+blockquote cite {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-style: normal;
+}
+
+footer blockquote {
+  margin-right: 4rem;
+  font-size: 2rem;
+  line-height: 1.4;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+footer blockquote cite {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #4E3319;
+}
+footer blockquote cite span.context {
+  margin-top: 5px;
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  color: #4E3319;
+}
+
+a[class*=atm--button-] {
+  text-decoration: none;
+}
+a[class*=atm--button-] i {
+  transition: 0.4s;
+}
+a[class*=atm--button-]:hover {
+  cursor: pointer;
+}
+
+.atm--button-main {
+  padding: 12px 28px;
+  padding-right: 40px;
+  background-color: rgb(193.5090909091, 231.5090909091, 248.0909090909);
+}
+.atm--button-main span {
+  letter-spacing: 0.02em;
+  color: white;
+}
+.atm--button-main i {
+  color: #4E3319;
+  margin-left: 12px;
+}
+.atm--button-main:hover {
+  background-color: #A6DDF5;
+}
+.atm--button-main:hover i {
+  transform: translate(12px, 0);
+}
+
+.atm--button-square-i {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(193.5090909091, 231.5090909091, 248.0909090909);
+}
+.atm--button-square-i i {
+  color: #4E3319;
+}
+.atm--button-square-i:hover {
+  background-color: #A6DDF5;
+}
+.atm--button-square-i:hover i {
+  transform: translate(6px, 0);
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+figure .border-shadow {
+  border: 5px solid white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.33);
+  margin-bottom: 1rem;
+}
+
+.ss-image-head figure img {
+  border-radius: 50%;
+}
+
+header {
+  padding-top: 0;
+  background-color: rgb(129.0515151515, 206.8848484848, 240.8484848485);
+}
+
+nav a {
+  transition: 0.3s;
+  color: #fff;
+}
+nav a:link {
+  color: #fff;
+}
+nav a:visited {
+  color: #fff;
+}
+nav a:hover {
+  color: #4E3319;
+}
+nav a:active {
+  color: #fff;
+}
+nav a:disabled {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar {
+  padding-top: 0;
+}
+
+nav h1, nav h1 a.navbar-brand {
+  padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+nav h1 a.navbar-brand:hover {
+  color: #4E3319;
+}
+nav a, nav .nav-link {
+  transition: 0.3s;
+  margin-left: 6px;
+  margin-right: 6px;
+  color: #fff;
+}
+nav a:link, nav .nav-link:link {
+  color: #fff;
+}
+nav a:visited, nav .nav-link:visited {
+  color: #fff;
+}
+nav a:hover, nav .nav-link:hover {
+  color: #4E3319;
+}
+nav a:active, nav .nav-link:active {
+  color: #fff;
+}
+nav a:disabled, nav .nav-link:disabled {
+  color: rgba(255, 255, 255, 0.3);
+}
+nav a.nav-link {
+  padding-top: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+nav a.nav-link:hover {
+  color: #fff;
+  background-color: #4E3319;
+}
+nav a.nav-link.active {
+  background-color: #4E3319;
+  color: #fff !important;
+}
+
+.navbar button.atmButtonNav {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 2px solid rgba(255, 255, 255, 0.12);
+}
+.navbar button.atmButtonNav i {
+  color: #fff;
+}
+.navbar button.atmButtonNav:hover {
+  color: red;
+}
+
+@media (max-width: 767px) {
+  .offcanvas.offcanvas-end {
+    backdrop-filter: blur(7px);
+    background-color: rgba(17, 17, 17, 0.8);
+    color: #fff;
+  }
+  .offcanvas.offcanvas-end h2 {
+    color: white;
+  }
+  .offcanvas.offcanvas-end .offcanvas-header {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .offcanvas.offcanvas-end .offcanvas-body {
+    padding: 0;
+  }
+  .offcanvas.offcanvas-end a.nav-link {
+    padding: 1rem;
+    background-color: unset;
+  }
+  .offcanvas.offcanvas-end li.menu-item {
+    padding: 10px 0;
+    padding-left: 10px;
+  }
+  .offcanvas.offcanvas-end li.menu-item:hover {
+    background-color: #4E3319;
+  }
+  .offcanvas.offcanvas-end li.current-menu-item, .offcanvas.offcanvas-end li.current-menu-item:hover {
+    color: #4E3319;
+  }
+  .offcanvas.offcanvas-end .offcanvas-header button.btn-close {
+    opacity: unset;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 2px solid rgba(255, 255, 255, 0.12);
+  }
+  .offcanvas.offcanvas-end .offcanvas-header button.btn-close i {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .offcanvas.offcanvas-end .offcanvas-header button.btn-close i:hover {
+    color: #fff;
+  }
+}
+.custom-toggler.navbar-toggler {
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.btn-close {
+  width: 2rem;
+  height: 2rem;
+  background: unset !important;
+}
+
+@media (min-width: 768px) {
+  .offcanvas.offcanvas-end {
+    backdrop-filter: unset;
+    background-color: unset;
+  }
+  .offcanvas.offcanvas-end li.current-menu-item a, .offcanvas.offcanvas-end li.current-menu-item:hover a {
+    color: #4E3319;
+  }
+}
+.templ--page-main {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 576px) {
+  .templ--page-main {
+    margin: 2rem 0;
+  }
+}
+@media (min-width: 768px) {
+  .templ--page-main {
+    margin: 4rem 0;
+  }
+}
+.post--block {
+  transition: 0.3s;
+  padding: 2rem;
+  background: rgb(151.2206060606, 215.3539393939, 243.3393939394);
+  margin-bottom: 0.6rem;
+  border-radius: 7px;
+}
+.post--block:hover {
+  background: rgb(136.4412121212, 209.7078787879, 241.6787878788);
+}
+.post--block figure img {
+  border: 5px solid white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.33);
+  margin-bottom: 1rem;
+}
+.post--block:last-child {
+  margin-bottom: 0;
+}
+.post--block h2 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.post--block h3 {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.post--block .post--add {
+  font-weight: 700;
+}
+.post--block blockquote {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.07);
+  font-size: 1rem;
+  font-style: italic;
+  border-left: 5px solid #4E3319;
+  margin-bottom: 1rem;
+}
+.post--block blockquote .credit {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.post--block p.cost {
+  margin-bottom: 0;
+}
+.post--block p.cost .small {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.note {
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.06);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: rgb(129.0515151515, 206.8848484848, 240.8484848485);
+  padding: 2rem 0;
+  color: #4E3319;
+}
+footer p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4E3319;
+}
+footer p.ss-copyright {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+footer a {
+  color: #167257;
+}
+footer a:hover {
+  color: #167257;
+}
+
+@media (min-width: 576px) {
+  footer {
+    padding: 4rem 0;
+  }
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 6rem 0;
+  }
+}

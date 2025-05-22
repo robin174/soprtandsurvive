@@ -1,0 +1,165 @@
+$bp--small: 576px; // navbar-expand-sm
+$bp--medium: 768px; // navbar-expand-md
+$bp--large: 992px; // navbar-expand-lg
+$bp--xlarge: 1200px; // navbar-expand-xl
+
+// Set breakpoint for navigation from header.php e.g.
+$breakpoint--navigation: $bp--medium;
+
+nav a {
+	transition: 0.3s;
+	color: $color--white;
+	&:link {
+		color: $color--white;
+	}
+	&:visited {
+		color: $color--white;
+	}
+	&:hover {
+		color: $color--secondary;
+	}
+	&:active {
+		color: $color--white;
+	}
+	&:disabled {
+		color: rgba($color--white, 0.3);
+	}
+}
+
+.navbar {
+	padding-top: 0;
+}
+
+nav {
+	& h1, h1 a.navbar-brand {
+		padding-top: 20px;
+		font-family: $font-sans;
+		font-weight: 600;
+		font-size: 1.1rem;
+		color: $color--white;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	& h1 a.navbar-brand:hover {
+		color: $color--secondary;
+	}
+	& a, .nav-link {
+		transition: 0.3s;
+		margin-left: 6px;
+		margin-right: 6px;
+		color: $color--white;
+		&:link {
+			color: $color--white;
+		}
+		&:visited {
+			color: $color--white;
+		}
+		&:hover {
+			color: $color--secondary;
+		}
+		&:active {
+			color: $color--white;
+		}
+		&:disabled {
+			color: rgba($color--white, 0.3);
+		}
+	}
+	& a.nav-link {
+		padding-top: $padding--general;
+		@include navigationUC;
+		font-size: 0.85rem;
+		font-weight: 600;
+		&:hover {
+			color: $color--white;
+			background-color: $color--secondary;
+		}
+		&.active {
+			background-color: $color--secondary;
+			color: $color--white !important;
+		}
+	}
+}
+
+
+
+// focus, active...etc. 
+
+.navbar button.atmButtonNav {
+	background-color: rgba(255,255,255,0.06);
+	border: 2px solid rgba(255,255,255,0.12);
+	& i {
+		color: $color--white;
+	} 
+	&:hover {
+		color: red;
+	}
+}
+
+// All the above needs to be converted to the below. What is small -> medium,  what is medium -> x-large.
+// Menu -> Medium: mobile version (off canvas)
+@media (max-width: $breakpoint--navigation - 1px){
+	.offcanvas.offcanvas-end {
+		backdrop-filter: blur(7px);
+		background-color: rgba(#111,0.8);
+		color: $color--white;
+		& h2 {
+			color: white;
+		}
+		& .offcanvas-header {
+			padding-top: 30px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		& .offcanvas-body {
+			padding: 0;
+		}
+		& a.nav-link {
+			padding: $padding--small;
+			background-color: unset;
+		}
+		& li.menu-item {
+			padding: 10px 0;
+			padding-left: 10px;
+			&:hover {
+				background-color: $color--secondary;
+			}
+		}
+		& li.current-menu-item, li.current-menu-item:hover {
+			color: $color--secondary;
+		}
+		& .offcanvas-header button.btn-close {
+			opacity: unset;
+			background-color: rgba(255,255,255,0.06);
+			border: 2px solid rgba(255,255,255,0.12);
+			& i {
+				color: rgba($color--white,0.5);
+				&:hover {
+					color: $color--white;
+				}
+			}
+		}
+	}
+}
+
+.custom-toggler.navbar-toggler {
+	border-width: 2px;
+ 	border-color: rgba(255,255,255,0.2)!important;
+}
+
+.btn-close {
+	width: 2rem;
+    height: 2rem;
+	background: unset!important;
+}
+
+
+// Medium -> max menu: normal menu-item
+@media (min-width: $breakpoint--navigation){
+	.offcanvas.offcanvas-end {
+		backdrop-filter: unset;
+		background-color: unset;
+		& li.current-menu-item a, li.current-menu-item:hover a {
+			color: $color--secondary;
+		}
+	}
+}

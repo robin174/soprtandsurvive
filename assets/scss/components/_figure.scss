@@ -1,0 +1,17 @@
+figure {
+	margin: 0;
+	padding: 0;
+	& .border-shadow {
+		border: 5px solid white;
+		box-shadow: 0 0 5px rgba(0,0,0,0.33);
+		margin-bottom: $margin--small;
+	}
+}
+
+.ss-image-head {
+	& figure {
+		& img {
+			border-radius: 50%;
+		}
+	}
+}

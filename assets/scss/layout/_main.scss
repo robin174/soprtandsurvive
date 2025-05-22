@@ -1,0 +1,79 @@
+.templ--page-main {
+	margin: 0; // No need for margin as PNG includes padding 
+	margin-bottom: $margin--general;
+}
+
+@media (min-width: $media-mobile) {
+	.templ--page-main {
+		margin: $margin--general 0;
+	}
+}
+
+@media (min-width: $media-tablet) {
+	.templ--page-main {
+		margin: $margin--general*2 0;
+	}
+}
+
+.post--block {
+	transition: 0.3s;
+	padding: $padding--general;
+	background: scale-color($color--primary, $lightness: -4%);
+	margin-bottom: $margin--small * 0.6;
+	border-radius: 7px;
+	&:hover {
+		background: scale-color($color--primary, $lightness: -8%);
+	}
+	& figure img {
+		border: 5px solid white;
+		box-shadow: 0 0 5px rgba(0,0,0,0.33);
+		margin-bottom: $margin--small;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	& h2 {
+		font-weight: 700;
+		font-size: 1.2rem;
+		margin-top: 0;
+		margin-bottom: $margin--small;
+	}
+	& h3 {
+		font-weight: 700;
+		font-size: 1.1rem;
+	}
+	& .post--add {
+		font-weight: 700;
+	}
+	& blockquote {
+		padding: $padding--small;
+		background: rgba(0,0,0,0.07);
+		font-size: 1rem;
+		font-style: italic;
+		border-left: 5px solid $color--secondary;
+		margin-bottom: $margin--small;
+		& .credit {
+			font-size: 0.8rem;
+			font-weight: 700;
+		}
+	}
+	& p.cost {
+		margin-bottom: 0;
+		& .small {
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+		}
+	}
+}
+
+// Page Builder
+.note {
+	font-weight: 700;
+	font-size: 0.8rem;
+	padding: $padding--small;
+	background-color: rgba(0,0,0,0.06);
+	margin-top: $margin--small;
+	margin-bottom: $margin--small;
+}
+
+
