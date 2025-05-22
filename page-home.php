@@ -34,10 +34,10 @@ get_header(); ?>
 						<section class="ss-orgs">
 							<figure>
 								<a href="http://www.museumsassociation.org" target="_blank" title="Find out more about the Museums Association" rel="external">
-									<img class="mw-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/ss-logo-ma-2021.png" alt="Museums Association">
+									<img class="mw-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/ss-logo-ma-2025.png" alt="Museums Association">
 								</a>
 							</figure>
-							<h6>Commercial Member of the Museums Association.</h6>
+							<h6>Consultant Member of the Museums Association.</h6>
 							<p class="small"><a href="http://www.museumsassociation.org" target="_blank" title="Find out more about the Museums Association" rel="external">Find out more »</a></p>
 						</section>
 					</div>

@@ -215,6 +215,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/images\/ss-logo-ma-2025.png" : {
+      "ft" : 32768,
+      "iS" : 22036,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/ss-logo-ma-2025.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/images\/ss-logo-ma.png" : {
       "ft" : 32768,
       "iS" : 11701,
